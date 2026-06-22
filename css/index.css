@@ -1,0 +1,63 @@
+/* ========================================
+   Bootstrap Practice — Ayxan Mustafayev
+   ======================================== */
+
+/* ── Hero Section ── */
+.hero-section {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #0d1b2a 100%);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(13, 110, 253, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+/* ── Section Header ── */
+.section-header {
+  border-left: 4px solid var(--bs-primary);
+  padding-left: 1rem;
+}
+
+/* ── Smooth scroll ── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Card hover lift ── */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* ── Navbar active link ── */
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+}
+
+/* ── Scrollbar (webkit) ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 3px;
+}
